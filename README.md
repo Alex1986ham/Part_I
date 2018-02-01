@@ -1,8 +1,8 @@
 # Part_I
 
-How to open files, read out information of files, close files:
+## How to open files, read out information of files, close files:
 
-use the functin "open". 
+## use the functin "open". 
 
 		Built-in Functions		
 abs()	dict()	help()	min()	setattr()
@@ -19,3 +19,9 @@ classmethod()	getattr()	locals()	repr()	zip()
 compile()	globals()	map()	reversed()	__import__()
 complex()	hasattr()	max()	round()	 
 delattr()	hash()	memoryview()	set()	 
+
+
+# To do, befor submiting a repo
+
+- Add docstrings to each 'class' and each 'def'
+- Check the whole document through 'POP8 online' for identation and so on
