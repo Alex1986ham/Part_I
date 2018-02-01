@@ -21,7 +21,7 @@ complex()	hasattr()	max()	round()
 delattr()	hash()	memoryview()	set()	 
 
 
-# To do, befor submiting a repo
+# To do, before submiting a repo
 
 - Add docstrings to each 'class' and each 'def'
 - Check the whole document through 'POP8 online' for identation and so on
