@@ -25,3 +25,63 @@ delattr()	hash()	memoryview()	set()
 
 - Add docstrings to each 'class' and each 'def'
 - Check the whole document through 'POP8 online' for identation and so on
+
+
+# HTML and CSS Skills
+
+IDs for example in <p id="something"> could be used just once in a webpage.
+
+In this example:
+
+<p class="highlight module right"></p>
+.right {
+color: green;
+}
+
+The class will be changed in color. Because its enought that the class just contains the word right.
+
+
+CSS References
+Mozilla Developer Network - CSS Reference
+css-tricks.com - CSS Almanac
+
+
+# DevTools
+
+- For Chrome look this up: https://developers.google.com/web/tools/chrome-devtools/
+- For Edge look this up: https://docs.microsoft.com/de-de/microsoft-edge/devtools-guide
+- For Safari look this up: https://developer.apple.com/safari/tools/
+
+# Setting Colors in CSS 
+
+## RGB
+Red 0 - 255 (255 means full light; 0 means no light
+Green 0 - 255
+Blue 0 - 255
+background-color: rgb(255, 0, 255);
+
+## Hexadecimal
+
+Red 00-FF
+Green 00-FF
+Blue 00-FF
+background-color: #FF00FF;
+
+# Styling of curser
+
+https://css-tricks.com/almanac/properties/c/cursor/
+
+# Designing a border
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+# Box shadow generator
+
+https://www.cssmatic.com/box-shadow
+
+# Refering from html to a css stylesheet
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Dev Blog Post</title>
+	<link rel="stylesheet" href="styles.css">
