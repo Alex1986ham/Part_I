@@ -85,3 +85,20 @@ https://www.cssmatic.com/box-shadow
   <meta charset="UTF-8">
   <title>Web Dev Blog Post</title>
 	<link rel="stylesheet" href="styles.css">
+
+
+# Positioning in CSS
+
+## Inlin-Block
+- box-sizing: border-box; for sizing the border box
+- display: inline-block; for sizing a span inline block (it positions elements in one line, but not if two divs are positions under each other
+- position: relative; The relative flow is a variant of the normal flow and behaves basically the same. But, the relative flow adds some new abilities.
+In case of this:
+'
+.shift {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+'
+position: relative; change the position of the box to top 10px and left 10px
