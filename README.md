@@ -89,7 +89,7 @@ https://www.cssmatic.com/box-shadow
 
 # Positioning in CSS
 
-## Inlin-Block
+## Inline-Block
 - box-sizing: border-box; for sizing the border box
 - display: inline-block; for sizing a span inline block (it positions elements in one line, but not if two divs are positions under each other
 - position: relative; The relative flow is a variant of the normal flow and behaves basically the same. But, the relative flow adds some new abilities.
@@ -102,3 +102,9 @@ In case of this:
 }
 '
 position: relative; change the position of the box to top 10px and left 10px
+
+## Position fixed
+
+position: fixed; this element will be always in the viewpoint of the user, use this especially for navigation tools
+
+Right! You only need position: fixed and bottom: 0px to make a sticky footer!
