@@ -119,3 +119,44 @@ Horizontal alignment starts with another property, direction, which has two opti
 vertical-align: text-top, vertical-align: text-bottom and vertical-align: middle are options for aligning text to the eponymous locations in the parent.
 
 vertical-align: top and vertical-align: bottom will align with the line instead.
+
+### CSS properties:
+- display
+- position
+- text-align
+- vertical-align
+
+## Floats inside of a container
+
+.left {
+      float: left;
+     
+With overflow: auto, the "new context" element respects the boundaries of the two children. No overlap! Try toggling overlap: auto to see what happens if it isn't applied.
+
+clear: left indicates that the top of the element must be below any left floated elements that appear before this one in the document. clear: right acts the same, but with right floated elements. clear: none means that there are no restrictions; this is the default value.
+
+  .bordered {
+      border: 2px solid #2e3d49;
+    }
+    .left {
+      float: left;
+      background-color: #FD9F0E;
+    }
+    .right {
+      float: right;
+      background-color: #FD9F0E;
+    }
+    .clear-left {
+      clear: left;
+    }
+    .clear-right {
+      clear: right;
+    }
+    .clear-both {
+      clear: both;
+    }
+    .wide {
+      width: 40%;
+    }
+  </style>
+  
