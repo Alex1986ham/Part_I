@@ -160,3 +160,65 @@ clear: left indicates that the top of the element must be below any left floated
     }
   </style>
   
+  
+  ## Setting a Viewport
+  
+  It's important to set a viewport to make a page scaleable to different devices. This code should be implemented in the head:
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  always use wide: 100% to make images according to the screen used.
+  Use wide: 100% especially for images and videos like this:
+  
+  img, embed, object, video {max-width: 100%;}
+  
+  ## Making Buttons big enough to be clicked on smartphone
+  
+  nav a, button {min-width: 48px; min-height: 48px;}
+  
+  also add a padding for each a tag:
+  
+  padding: 1.5em;
+  Remember code always from small to large screen.
+  
+  ## Adding media query
+  
+  <link rel="stylesheet" media="screen and (min-width:500px)" href="over500.css">
+  
+  in th over500.css write this:
+  body {background-color: blue;}
+  
+  A link to a separate css file is one possiblity to solve that problem. An other solution might be to use @media.
+  The advantage of @media is that when loading the page fewer http request are needed, because the css file is just bigger and	don' have to much css files.
+  
+  Example:
+  
+  @media screen and (min-width: 500px) {boady { color: #F79420;}}
+  
+  @dedia screen and (min-width: 800px){body {background-color: blue;}
+  
+  <style type="text/css">
+      h1 {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        font-size: 6em;
+        font-family: Roboto;
+        transition: all 0.5s;
+      }
+
+       body{
+    	background-color: green;
+          }
+          @media screen and (max-width: 400px) {
+              body {background-color: red; }
+          } 
+           @media screen and (min-width: 600px) {
+               body {background-color: blue; }
+          }
+          
+    </style>
+  
+  
+  
+  
