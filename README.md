@@ -220,5 +220,27 @@ clear: left indicates that the top of the element must be below any left floated
     </style>
   
   
+  ## Breakpoints
+  
+  Adding breakpoints is neccessery to make it suitable to different screens.
+  
+  ## Flexbox
+  
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  Putting an order to all css elements:
+  header { width: 100%; order: 1; }
+  .red {width: 50%; order 2;}
+  .gree {width: 50%; order 3;}
+  footer {width: 100%; order: 3;}
+  
+  ## Udacity Style Guide
+  
+  The html and css code you write should conforms to the Udacity Style Guide:
+  
+  http://udacity.github.io/frontend-nanodegree-styleguide/
+  
   
   
