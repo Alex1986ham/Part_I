@@ -25,8 +25,8 @@
 
 - look for .bash_profile how to change it
 
-Shell resources
-The Bash Academy
-Bash Beginners Guide
-Bash Programming HOWTO
-Regexr — Learn Regular Expressions
+- Shell resources
+- The Bash Academy
+- Bash Beginners Guide
+- Bash Programming HOWTO
+- Regexr — Learn Regular Expressions
