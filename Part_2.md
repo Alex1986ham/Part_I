@@ -34,3 +34,16 @@
 
 # Git 
 
+## Types of different git commands:
+
+- git clone link (gets the repo in the current working directory)
+- git status (gives the status of the current repo)
+- git log (displays information about the existing commits)
+  - git log --oneline (shows shorter information about all commits)
+  - git log --stat (shows information about changed files)
+  - git log --patch (or) git log -p (shows very detailled information about any changes in the files)
+  - git log -p fdf5493 (will start showing at a particular SHA and all the previous commits)
+- git show (diesplays the info abou the last commit)
+- git show fdf5493 (shows info about a particular commit and nothing lese (by default it shows -p)) 
+    git show could be combined with --stat / -p / -w
+
