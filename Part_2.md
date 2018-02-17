@@ -97,5 +97,6 @@ Checkout udacity standards of making commits: https://udacity.github.io/git-styl
 
 ### Merging
 
-
+- git merge <name-of-branch-to-merge-in> (beeing in masters branch a sidebar branch will be merged to master branch)
+- git reset --hard HEAD^ (turns a merge back)
 
