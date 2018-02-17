@@ -52,4 +52,26 @@
 
 - git add index.html (puts the file to the staging aread)
 - git rm --cached index.html (removes the file from the staging area back to nomrmal repo)
-- gitt add . (adds all existing files to the repo)
+- git add . (adds all existing files to the repo)
+- git commit (to commit changes through atom, atom will be opend)
+- git commit -m "initial commit..." (will make a commit with the text initial commit)
+
+### Writting commit messages
+
+Do
+
+- do keep the message short (less than 60-ish characters)
+- do explain what the commit does (not how or why!)
+
+Do not
+
+- do not explain why the changes are made (more on this below)
+- do not explain how the changes are made (that's what git log -p is for!)
+- do not use the word "and"
+  - if you have to use "and", your commit message is probably doing too many changes - break the changes into separate commits
+  - e.g. "make the background color pink and increase the size of the sidebar"
+Checkout udacity standards of making commits: https://udacity.github.io/git-styleguide/
+
+- git diff (shows the uncommited changes in comparison to the last commit)
+- touch test.txt (adding a document to the current directory)
+- by adding a file .gitignore all files in this directory will be ingnored by commits to the repo
