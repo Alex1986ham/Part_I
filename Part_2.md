@@ -86,4 +86,16 @@ Checkout udacity standards of making commits: https://udacity.github.io/git-styl
 
 ### Branching
 
+- git branch (If we type out just git branch it will list out the branches in a repository)
+- git branch sidebar (will add a new branch named sidebar to the repo)
+- git checkout sidebar (changing to the branch sidebar)
+- git branch beta-version 42a69f (will create a new branch at a specific commit)
+- git branch -d sidebar (will delete the branch sidebar, but first need to change to master)
+- git branch -D sidebar (this is a hard deleting of a branch, which has commits on it, which aren't available in an other branch)
+- git checkout -b footer master (does 2 things in one: creates under master a new branch named footer)
+- git log --oneline --decorate --graph --all (seeing all versions on all branches)
+
+### Merging
+
+
 
