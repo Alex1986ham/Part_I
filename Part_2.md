@@ -75,3 +75,15 @@ Checkout udacity standards of making commits: https://udacity.github.io/git-styl
 - git diff (shows the uncommited changes in comparison to the last commit)
 - touch test.txt (adding a document to the current directory)
 - by adding a file .gitignore all files in this directory will be ingnored by commits to the repo
+
+
+### Taggin
+
+- git tag -a v1.0 -m "1st version" (creates a tag to the current commit, exmpl. version or something)
+- git tag (displays just all tags existing)
+- git tag -d v1.0 (for deleting a tag / git tag --delete works also)
+- git tag -a v1.0 a87984 (will add a tag to a past commit)
+
+### Branching
+
+
