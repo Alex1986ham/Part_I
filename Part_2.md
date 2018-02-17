@@ -36,6 +36,7 @@
 
 ## Types of different git commands:
 
+- git init (creates space in the directory for the git repo)
 - git clone link (gets the repo in the current working directory)
 - git status (gives the status of the current repo)
 - git log (displays information about the existing commits)
@@ -47,3 +48,8 @@
 - git show fdf5493 (shows info about a particular commit and nothing lese (by default it shows -p)) 
     git show could be combined with --stat / -p / -w
 
+## Putting all files to staging aread, from where they could be commited
+
+- git add index.html (puts the file to the staging aread)
+- git rm --cached index.html (removes the file from the staging area back to nomrmal repo)
+- gitt add . (adds all existing files to the repo)
