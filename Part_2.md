@@ -100,3 +100,20 @@ Checkout udacity standards of making commits: https://udacity.github.io/git-styl
 - git merge <name-of-branch-to-merge-in> (beeing in masters branch a sidebar branch will be merged to master branch)
 - git reset --hard HEAD^ (turns a merge back)
 
+### Undoing changes
+
+- git commit --amend -m "..." (to update the most-recent commit instead of creating a new one)
+- git revert <SHA-of-commit-to-revert> (When you tell Git to revert a specific commit, Git takes the changes that were made in commit and does the exact opposite of them)
+- git reflog (You've got to be careful with Git's resetting capabilities. This is one of the few commands that lets you erase commits from the repository. If a commit is no longer in the repository, then its content is gone.
+To alleviate the stress a bit, Git does keep track of everything for about 30 days before it completely erases anything. To access this content, you'll need to use the git reflog command. Check out these links for more info)
+
+- git reset <reference-to-commit> (The git reset command is used to reset (erase) commits)
+  it could be used to...:
+    - move the HEAD and current branch pointer to the referenced commit
+    - erase commits
+    - move committed changes to the staging index
+    - unstage committed changes
+- git reset --mixed HEAD~1 (will move the last commit to working directory)
+- git reset --soft HEAD~1 (will move the last commit to staging index)
+- git reset --hard HEAD~1 (will move the last commit to trash, where it will be available for 30 days)
+- git branch backup (before reset a commit, create a backup)
