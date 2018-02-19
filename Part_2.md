@@ -117,3 +117,13 @@ To alleviate the stress a bit, Git does keep track of everything for about 30 da
 - git reset --soft HEAD~1 (will move the last commit to staging index)
 - git reset --hard HEAD~1 (will move the last commit to trash, where it will be available for 30 days)
 - git branch backup (before reset a commit, create a backup)
+
+### Create connection from local repo to a repo on github
+
+- git remote add origin https://github.com/Alex1986ham/my-travel-plans.git (this links comes from creating a new repo on github)
+- git push origin master (pushing all commits from local to remote on github)
+- git log --oneline --graph --decorate --all (showing all information about repo)
+- git pull origin master (gets changed commits from origin to the local repo)
+- git fetch origin master (Git fetch is used to retrieve commits from a remote repository's branch but it does not automatically merge the local branch with the remote tracking branch after those commits have been received)
+- git merge origin/master (will join the new branch called origin/master to the existing master branch)
+
