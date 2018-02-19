@@ -127,3 +127,16 @@ To alleviate the stress a bit, Git does keep track of everything for about 30 da
 - git fetch origin master (Git fetch is used to retrieve commits from a remote repository's branch but it does not automatically merge the local branch with the remote tracking branch after those commits have been received)
 - git merge origin/master (will join the new branch called origin/master to the existing master branch)
 
+### Forking
+
+Forking is an action that's done on a hosting service, like GitHub. Forking a repository creates an identical copy of the original repository and moves this copy to your account. You have total control over this forked repository. Modifying your forked repository does not alter the original repository in any way.
+
+### When many people working on same project
+
+- git shortlog (overview of all commits)
+- git shortlog -s -n (with the -s -n flags to show only the number of commits each author has made, sorted numerically.)
+- git log --author=Surma (The output displays only the commits that Surma made)
+- git show 5966b66 (see an example of extra details in a commit)
+- git log --grep=bug
+$ git log --grep bug (filter down to just the commits that reference the word "bug")
+
