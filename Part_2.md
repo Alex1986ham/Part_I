@@ -140,3 +140,51 @@ Forking is an action that's done on a hosting service, like GitHub. Forking a re
 - git log --grep=bug
 $ git log --grep bug (filter down to just the commits that reference the word "bug")
 
+### Pull request
+
+A pull request is a request for the source repository to pull in your commits and merge them with their project. To create a pull request, a couple of things need to happen:
+
+you must fork the source repository
+clone your fork down to your machine
+make some commits (ideally on a topic branch!)
+push the commits back to your fork
+create a new pull request and choose the branch that has your new commits
+
+### Origin vs Upstream Clarification
+
+One thing that can be a tiny bit confusing right now is the difference between the origin and upstream. What might be confusing is that origin does not refer to the source repository (also known as the "original" repository) that we forked from. Instead, it's pointing to our forked repository. So even though it has the word origin is not actually the original repository.
+
+Remember that the names origin and upstream are just the default or de facto names that are used. If it's clearer for you to name your origin remote mine and the upstream remote source-repo, then by all means, go ahead and rename them. What you name your remote repositories in your local repository does not affect the source repository at all.
+
+#### Rename remote names
+
+- git remote rename mine origin
+- git remote rename source-repo upstream
+
+### Stay sync with source project
+
+When working with a project that you've forked. The original project's maintainer will continue adding changes to their project. You'll want to keep your fork of their project in sync with theirs so that you can include any changes they make.
+
+To get commits from a source repository into your forked repository on GitHub you need to:
+
+get the cloneable URL of the source repository
+create a new remote with the git remote add command
+use the shortname upstream to point to the source repository
+provide the URL of the source repository
+fetch the new upstream remote
+merge the upstream's branch into a local branch
+push the newly updated local branch to your origin repo
+
+### Rebase commits
+
+- git rebase -i HEAD~3 (Using git rebase creates a new commit with a new SHA. When I tried using git push to send this commit up to GitHub, GitHub knew that accepting the push would erase the three separate commits, so it rejected it. So I had to force push the commits through using git push -f)
+
+#### When to rebase
+
+As you've seen, the git rebase command is incredibly powerful. It can help you edit commit messages, reorder commits, combine commits, etc. So it truly is a powerhouse of a tool. Now the question becomes "When should you rebase?".
+
+Whenever you rebase commits, Git will create a new SHA for each commit! This has drastic implications. To Git, the SHA is the identifier for a commit, so a different identifier means it's a different commit, regardless if the content has changed at all.
+
+So you should not rebase if you have already pushed the commits you want to rebase. If you're collaborating with other developers, then they might already be working with the commits you've pushed. If you then use git rebase to change things around and then force push the commits, then the other developers will now be out of sync with the remote repository. They will have to do some complicated surgery to their Git repository to get their repo back in a working state...and it might not even be possible for them to do that; they might just have to scrap all of their work and start over with your newly-rebased, force-pushed commits.
+
+I recommend that you create a backup branch before rebasing, so that it's easy to return to your previous state. If you're happy with the rebase, then you can just delete the backup branch!
