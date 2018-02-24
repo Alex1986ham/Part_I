@@ -46,3 +46,8 @@ q=gray+squirrel&tbm=isch
 
 Idempotence
 Vocabulary word of the day: idempotent. An action is idempotent if doing it twice (or more) produces the same result as doing it once. "Show me the search results for 'polar bear'" is an idempotent action, because doing it a second time just shows you the same results. "Add a polar bear to my shopping cart" is not, because if you do it twice, you end up with two polar bears.
+
+
+## JSON
+
+read more abou json: http://www.json.org
