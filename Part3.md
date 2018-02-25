@@ -50,4 +50,12 @@ Vocabulary word of the day: idempotent. An action is idempotent if doing it twic
 
 ## JSON
 
-read more abou json: http://www.json.org
+read more about json: http://www.json.org
+
+## HTTP Cache
+
+read more http cache: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching
+
+## Cookies
+
+read more: https://docs.python.org/3/library/http.cookies.html
