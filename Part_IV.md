@@ -85,3 +85,21 @@ from animals join diet
 on animals.species = diet.species
 group by food
 having num = 1
+
+### More information about Taxonomy
+
+https://en.wikipedia.org/wiki/Taxonomy_(biology)
+
+### Biological classification
+
+https://en.wikipedia.org/wiki/Taxonomy_(biology)
+
+### Joining three tables together
+
+select ordernames.name, count(*) as num
+  from animals, taxonomy, ordernames
+  where animals.species = taxonomy.name
+    and taxonomy.t_order = ordernames.t_order
+  group by ordernames.name
+  order by num desc
+
