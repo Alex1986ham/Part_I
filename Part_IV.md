@@ -53,3 +53,35 @@ The optional desc modifier tells the database to order results in descending ord
 
 group by
 The group by clause is only used with aggregations, such as max or sum. Without a group by clause, a select statement with an aggregation will aggregate over the whole selected table(s), returning only one row. With a group by clause, it will return one row for each distinct value of the column or expression in the group by clause.
+
+### Insert something into table
+
+SELECT_QUERY = '''
+select name, birthdate from animals where species='opossum';
+'''
+
+INSERT_QUERY = '''
+insert into animals values('max','opossum','2017-09-17');
+'''
+
+### Join syntax (older one)
+
+select name 
+from animals 
+join diet on animals.species = diet.species
+where food = 'fish';
+
+### Join syntax (new one)
+
+select name
+from animals, diet
+where animals.species = diet.species
+and diet.food = 'fish';
+
+### Using count in joined tables
+
+select food, count(*) as num
+from animals join diet
+on animals.species = diet.species
+group by food
+having num = 1
