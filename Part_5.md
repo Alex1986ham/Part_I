@@ -24,3 +24,9 @@ https://www.youtube.com/watch?v=djnqoEO2rLc
 - timestamp with time zone — a timestamp that carries time zone information.
 
 - The type timestamp with time zone can be abbreviated to timestamptz in PostgreSQL.
+
+
+### Info about having statement
+
+https://www.postgresql.org/docs/9.4/static/sql-select.html#SQL-HAVING
+
