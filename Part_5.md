@@ -131,7 +131,7 @@ where content like '%cheese%';
 
 ### sample for get and post for a server to sql database
 
-'''import psycopg2, bleach
+```import psycopg2, bleach
 
 DBNAME = "forum"
 
@@ -151,4 +151,4 @@ def add_post(content):
   c.execute("insert into posts values (%s)", (content,))  # Better, but ...
   db.commit()
   db.close()
-  '''
+  ```
