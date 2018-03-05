@@ -173,3 +173,12 @@ create table tablename (column1 type [constraints], column2 type [constraints] .
 ```
 
 [wikipedia about normalization](https://en.wikipedia.org/wiki/Database_normalization)
+
+### how to crate database
+
+create databse name [options];
+
+#### create a connection to a new created databse inside of psql
+
+\c nameofdatabase
+
