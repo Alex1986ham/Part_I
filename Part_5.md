@@ -131,8 +131,7 @@ where content like '%cheese%';
 
 ### sample for get and post for a server to sql database
 
-'''
-import psycopg2, bleach
+'''import psycopg2, bleach
 
 DBNAME = "forum"
 
