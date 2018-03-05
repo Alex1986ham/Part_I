@@ -154,6 +154,7 @@ def add_post(content):
   db.close()
   python```
 
+
 ### Normalization of database
 
 link: http://www.bkent.net/Doc/simple5.htm
@@ -162,5 +163,13 @@ link: http://www.bkent.net/Doc/simple5.htm
 2. rule: there is a key, and everything in a row says something about the key
 3. rule: facts that don't relate to the key, belong in different tables
 4. rule: tables shouldn't imply relationships that don't exist
+
+[wikipedia about normalization](https://en.wikipedia.org/wiki/Database_normalization)
+
+### creating tables and rows
+
+```sql
+create table tablename (column1 type [constraints], column2 type [constraints] ...);
+```
 
 [wikipedia about normalization](https://en.wikipedia.org/wiki/Database_normalization)
