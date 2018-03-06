@@ -194,3 +194,17 @@ select a.id, b.id, a.building, a.room
  order by a.building, a.room;
  ```
 `
+
+### Different types of counting
+
+```sql
+select count(*) from animals;
+`
+
+```sql
+select count(*) from animals where species = 'gorilla';
+`
+
+```sql
+select species, count(*) from animals group by species;
+`
