@@ -199,12 +199,27 @@ select a.id, b.id, a.building, a.room
 
 ```sql
 select count(*) from animals;
+```
 `
 
 ```sql
 select count(*) from animals where species = 'gorilla';
+```
 `
 
 ```sql
 select species, count(*) from animals group by species;
+```
 `
+
+### Example for a left join
+
+```sql
+select products.name, products.sku, count(sales.sku) as num
+  from products left join sales
+    on products.sku = sales.sku
+  group by products.sku;
+```
+`
+- the normal join is a inner join
+- right join is the opposit of left join
