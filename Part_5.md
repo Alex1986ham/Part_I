@@ -182,3 +182,15 @@ create databse name [options];
 
 \c nameofdatabase
 
+### to select in one specific columsn and just the matched in the other column
+
+
+```sql
+select a.id, b.id, a.building, a.room
+       from residences as a, residences as b
+ where a.building = b.building
+   and a.room = b.room
+   and a.id < b.id
+ order by a.building, a.room;
+ ```
+`
